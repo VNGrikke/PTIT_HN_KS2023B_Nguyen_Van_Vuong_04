@@ -2,7 +2,6 @@ package ra.entity;
 
 import ra.validate.CustomerValidator;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Customer implements IApp {

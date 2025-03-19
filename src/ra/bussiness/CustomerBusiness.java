@@ -8,7 +8,7 @@ public class CustomerBusiness {
     public static void main(String[] args) {
 
         Customer[] customers = new Customer[1000];
-        int current = 0;
+        int count = 0;
 
 
         Scanner sc = new Scanner(System.in);
@@ -26,6 +26,15 @@ public class CustomerBusiness {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
+                    if (count == 0) {
+                        System.out.println("danh sach trong hay nhap them");
+                        break;
+                    }
+                    for (Customer c : customers) {
+                        c.displayData();
+                    }
+
+
                     break;
                 case 2:
                     break;
